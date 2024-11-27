@@ -2,16 +2,16 @@ Seafile server package for Raspberry Pi. Maintained by seafile community.
 
 ## Download
 
-- The latest **stable** rpi version is [here](https://github.com/haiwen/seafile-rpi/releases/latest).
+- The latest **stable** rpi version is [here](https://github.com/dean2k/seafile-rpi/releases/latest).
 
 ## Build
 
 E.g. to compile Seafile server v10.0.1:
 
 ```shell
-$ wget https://raw.githubusercontent.com/haiwen/seafile-rpi/master/build.sh
+$ wget https://raw.githubusercontent.com/dean2k/seafile-rpi/master/build.sh
 $ chmod u+x build.sh
-$ sudo ./build.sh -DTA -v 10.0.1 -h https://raw.githubusercontent.com/haiwen/seafile-rpi/master/requirements/seahub_requirements_v10.0.1.txt -d https://raw.githubusercontent.com/haiwen/seafile-rpi/master/requirements/seafdav_requirements_v10.0.1.txt
+$ sudo ./build.sh -DTA -v 10.0.1 -h https://raw.githubusercontent.com/dean2k/seafile-rpi/master/requirements/seahub_requirements_v10.0.1.txt -d https://raw.githubusercontent.com/dean2k/seafile-rpi/master/requirements/seafdav_requirements_v10.0.1.txt
 ```
 
 Calling `./build.sh` without arguments will return usage information and a list of all available arguments:
@@ -45,9 +45,9 @@ Usage:
     -f <vers>   Set fixed libsearpc version
                 default: 3.1.0
     -h <vers>   Set python requirement file for seahub
-                default: https://raw.githubusercontent.com/haiwen/seahub/v10.0.1-server/requirements.txt
+                default: https://raw.githubusercontent.com/dean2k/seahub/v10.0.1-server/requirements.txt
     -d <vers>   Set python requirement file for seafdav
-                default: https://raw.githubusercontent.com/haiwen/seafdav/v10.0.1-server/requirements.txt
+                default: https://raw.githubusercontent.com/dean2k/seafdav/v10.0.1-server/requirements.txt
 
     use --version for version info of this script.
 ```
@@ -82,7 +82,7 @@ seafile@rpi-focal:~$ tree . -L 3
 If you want to build for multiple distributions and architectures via lxc containers you can run:
 
 ```shell
-$ wget https://raw.githubusercontent.com/haiwen/seafile-rpi/master/build-batch.sh
+$ wget https://raw.githubusercontent.com/dean2k/seafile-rpi/master/build-batch.sh
 $ chmod u+x build-batch.sh
 $ sudo time bash ./build-batch.sh 10.0.1
 ```
